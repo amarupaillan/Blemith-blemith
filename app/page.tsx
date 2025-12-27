@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { CheckCircle2, Phone, Mail, MapPin, Clock, Shield, Hammer, Construction, Menu, X } from "lucide-react";
 import Image from "next/image";
-import Script from "next/script";
 import { useState } from "react";
 
 export default function Home() {
@@ -297,7 +296,7 @@ export default function Home() {
         </section>
 
          {/* Gallery Section */}
-        <section id="galeria" className="py-20 bg-white">
+         <section id="galeria" className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-orange-600 font-bold uppercase tracking-wider mb-2">Nuestros Proyectos</h2>
@@ -317,30 +316,6 @@ export default function Home() {
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-orange-600 font-bold uppercase tracking-wider mb-2">Testimonios</h2>
-              <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Lo que dicen nuestros clientes</h3>
-            </div>
-            
-            <div className="max-w-sm mx-auto bg-black rounded-2xl overflow-hidden shadow-2xl ring-4 ring-gray-900/5">
-              <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
-                <iframe 
-                  src="https://player.vimeo.com/video/1149738215?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0" 
-                  frameBorder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} 
-                  title="Dec 13 2025 Video"
-                ></iframe>
-              </div>
-              <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
             </div>
           </div>
         </section>
